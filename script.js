@@ -1,41 +1,20 @@
-// alert("hello world");
+"use strict"
 
-// let answer = confirm("Are you here?");
-// console.log("answer");
+let money, time;
 
-// let answer = +prompt("Вопрос", "Да"); // унарный плюс 
-// превратит строку в число
-// console.log(answer);
-// console.log(typeof(answer));
+money = +prompt("Ваш бюджет на месяц?: ", "0");
+time = prompt("Введите дату в формате YYYY-MM-DD:");
 
-// console.log("arr" + " – object");
-// console.log(4 + " – number");
-// console.log(4 + +" – number");
+var appData = {
+    appDataMoney: money,
+    timeData: time,
+    expenses: {
+        // prompt("Введите обязательную статью расходов в этом месяце: ", "0"") : prompt("Во сколько обойдется?", "0")
+    }
+};
 
-let incr = 10, decr = 10;
+var optionalExpenses = {};
+var income = [];
+var savings = false;
 
-incr++;
-decr--;
-
-console.log(incr);
-console.log(decr);
-
-console.log(++incr);
-console.log(--decr);
-
-console.log(incr++);
-console.log(decr--);
-
-console.log(incr);
-console.log(decr);
-
-console.log(5%2); //mod
-
-console.log("2" == 2);
-console.log("2" === 2);
-
-let isChecked = true,
-    isClose= true;
-
-    console.log(isChecked && isClose); //and
-    console.log(isChecked || isClose); //or
+alert("Ваш бюджет на день: " + money/30);
